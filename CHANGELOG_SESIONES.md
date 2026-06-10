@@ -4,6 +4,33 @@
 
 ---
 
+## 2026-06-09 (3) — SPEC-001 implementada + SPEC-003 personalizador IA
+
+### Estado de specs
+- SPEC-001: **Implementada** — todos los criterios de aceptación cumplidos
+- SPEC-003: **Implementada** — personalizador de paleta con Claude Vision
+
+### Creados
+- `src/app/demo/valentina-xv/` — página completa de la invitación demo
+- `src/components/invitacion/` — 11 componentes (Portada, Countdown, Mensaje, Itinerario, Mapa, DressCode, MesaRegalos, RSVPForm, FooterViral, AnimatedSection, ColorConfigurator)
+- `src/context/InvitacionContext.tsx` — estado global de paleta CSS
+- `src/app/api/palette/route.ts` — API endpoint Claude Vision para generar paletas
+- `src/app/demo/valentina-xv/opengraph-image.tsx` — imagen OG dinámica para WhatsApp
+- `src/components/invitacion/palette.ts` — tokens CSS (`--inv-primary`, etc.)
+
+### Decisiones tomadas
+- Arquitectura de CSS custom properties: todos los colores viven en 6 variables
+  `--inv-primary/Dark/Mid/Light/bg/text` → la invitación es completamente re-themeable
+- OG image generada con `next/og` (edge runtime) — no requiere archivo estático
+- API palette usa `claude-sonnet-4-6` con vision; acepta imagen base64 o texto libre
+
+### Pendientes
+- Crear repo GitHub y conectar Vercel para obtener URL pública (lo hace el usuario)
+- Validar con 10 personas reales (criterio de paso a SPEC-002)
+- SPEC-002 es el siguiente paso: RSVP real con Supabase
+
+---
+
 ## 2026-06-09 (2) — Roadmap completo: specs 004–010 y reordenamiento de fases
 
 ### Creados

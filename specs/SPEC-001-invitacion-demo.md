@@ -2,7 +2,7 @@
 
 | Campo | Valor |
 |---|---|
-| **Estado** | Aprobada |
+| **Estado** | Implementada |
 | **Fase** | 1 |
 | **Rama** | `feat/spec-001-invitacion-demo` |
 | **PR** | #— |
@@ -48,13 +48,13 @@ de secciones al hacer scroll:
 - Múltiples plantillas (→ fase 3)
 
 ## 4. Criterios de aceptación
-- [ ] Al abrir la URL en un teléfono, la invitación se ve completa y elegante sin zoom ni scroll horizontal
-- [ ] La cuenta regresiva muestra el tiempo restante real hasta la fecha del evento y se actualiza cada segundo
-- [ ] El botón de ubicación abre Google Maps con la dirección correcta
-- [ ] El formulario de confirmación valida nombre no vacío y muestra mensaje de agradecimiento
-- [ ] Al compartir el link por WhatsApp aparece una tarjeta de preview con imagen y título del evento
-- [ ] La página carga en menos de 3 segundos en conexión móvil
-- [ ] Existe el footer con la marca y un link (aunque apunte a "#" por ahora)
+- [x] Al abrir la URL en un teléfono, la invitación se ve completa y elegante sin zoom ni scroll horizontal
+- [x] La cuenta regresiva muestra el tiempo restante real hasta la fecha del evento y se actualiza cada segundo
+- [x] El botón de ubicación abre Google Maps con la dirección correcta
+- [x] El formulario de confirmación valida nombre no vacío y muestra mensaje de agradecimiento
+- [x] Al compartir el link por WhatsApp aparece una tarjeta de preview con imagen y título del evento
+- [x] La página carga en menos de 3 segundos en conexión móvil
+- [x] Existe el footer con la marca y un link (aunque apunte a "#" por ahora)
 
 ## 5. Detalles técnicos
 - Next.js App Router, una sola ruta: `/demo/valentina-xv`

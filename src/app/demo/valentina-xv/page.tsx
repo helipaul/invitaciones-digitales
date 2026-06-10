@@ -67,7 +67,7 @@ export default function ValentinaXV() {
 
         <Separador />
 
-        <RSVPForm />
+        <RSVPForm eventSlug="valentina-xv" />
 
         <FooterViral />
       </main>

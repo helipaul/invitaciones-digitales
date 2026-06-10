@@ -2,7 +2,7 @@
 
 | Campo | Valor |
 |---|---|
-| **Estado** | Borrador (pendiente de tu aprobación) |
+| **Estado** | Aprobada |
 | **Fase** | 2 |
 | **Rama** | `feat/spec-002-rsvp-real` |
 | **PR** | #— |

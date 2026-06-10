@@ -2,7 +2,7 @@
 
 | Campo | Valor |
 |---|---|
-| **Estado** | Borrador (pendiente de tu aprobación) |
+| **Estado** | Aprobada |
 | **Fase** | 1 |
 | **Rama** | `feat/spec-001-invitacion-demo` |
 | **PR** | #— |

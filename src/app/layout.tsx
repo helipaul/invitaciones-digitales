@@ -16,6 +16,7 @@ const cormorant = Cormorant_Garamond({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://invitaciones.laimpronta.com"),
   title: "Invitaciones Digitales",
   description: "Crea tu invitación digital en minutos",
 }

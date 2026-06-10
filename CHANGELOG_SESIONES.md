@@ -4,6 +4,59 @@
 
 ---
 
+## 2026-06-09 (3) — SPEC-001 implementada + SPEC-003 personalizador IA
+
+### Estado de specs
+- SPEC-001: **Implementada** — todos los criterios de aceptación cumplidos
+- SPEC-003: **Implementada** — personalizador de paleta con Claude Vision
+
+### Creados
+- `src/app/demo/valentina-xv/` — página completa de la invitación demo
+- `src/components/invitacion/` — 11 componentes (Portada, Countdown, Mensaje, Itinerario, Mapa, DressCode, MesaRegalos, RSVPForm, FooterViral, AnimatedSection, ColorConfigurator)
+- `src/context/InvitacionContext.tsx` — estado global de paleta CSS
+- `src/app/api/palette/route.ts` — API endpoint Claude Vision para generar paletas
+- `src/app/demo/valentina-xv/opengraph-image.tsx` — imagen OG dinámica para WhatsApp
+- `src/components/invitacion/palette.ts` — tokens CSS (`--inv-primary`, etc.)
+
+### Decisiones tomadas
+- Arquitectura de CSS custom properties: todos los colores viven en 6 variables
+  `--inv-primary/Dark/Mid/Light/bg/text` → la invitación es completamente re-themeable
+- OG image generada con `next/og` (edge runtime) — no requiere archivo estático
+- API palette usa `claude-sonnet-4-6` con vision; acepta imagen base64 o texto libre
+
+### Pendientes
+- Crear repo GitHub y conectar Vercel para obtener URL pública (lo hace el usuario)
+- Validar con 10 personas reales (criterio de paso a SPEC-002)
+- SPEC-002 es el siguiente paso: RSVP real con Supabase
+
+---
+
+## 2026-06-09 (2) — Roadmap completo: specs 004–010 y reordenamiento de fases
+
+### Creados
+- `specs/SPEC-004-configurador-conversacional.md` — dashboard + chat IA que configura el evento con preview en vivo (Borrador)
+- `specs/SPEC-005-dictado-por-voz.md` — entrada por voz en el configurador (Borrador)
+- `specs/SPEC-006-ubicaciones-inteligentes.md` — resolución de lugares con Google Places, fotos y mapa (Borrador)
+- `specs/SPEC-007-compartir-whatsapp.md` — preview rico OG + link permanente y dinámico (Borrador)
+- `specs/SPEC-008-recordatorios-invitados.md` — recordatorios automáticos email/WhatsApp estilo webinar (Borrador)
+- `specs/SPEC-009-agendar-calendario.md` — botón agendar Google/Apple (.ics) (Borrador)
+- `specs/SPEC-010-album-colaborativo.md` — fotos de invitados en tiempo real + collage proyectable (Borrador)
+
+### Modificados
+- `PROGRAMA.md` — Fase 3 pasa de "editor manual" a "Configurador conversacional con IA" (SPEC-004 a 006); nuevas Fase 4 "Difusión y engagement" (SPEC-007 a 009) y Fase 5 "Experiencia del evento en vivo" (SPEC-010); Monetización → Fase 6, Crecimiento → Fase 7; Fase 1.5 (SPEC-003) insertada en orden.
+
+### Decisiones tomadas
+- La invitación demo (SPEC-001) se mantiene como prueba de concepto y plantilla que el configurador IA generará; no se reemplaza por un dashboard inicial.
+- Prioridad: SPEC-002 (RSVP) antes que el configurador — da la base de invitados que requieren recordatorios, calendario y álbum.
+- Branding desde imagen/prompt queda cubierto por SPEC-003 existente; se integra como paso del chat en SPEC-004.
+- Recordatorios: email primero (Resend); WhatsApp Business después por costos y verificación Meta.
+
+### Pendientes
+- Aprobar specs 004–010 (todas en Borrador).
+- Sigue activa la ruta SPEC-001 → SPEC-002.
+
+---
+
 ## 2026-06-09 — Fase 0: Setup inicial del proyecto
 
 ### Creados

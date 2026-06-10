@@ -95,25 +95,40 @@ invitaciones/
 - **Meta de validación:** mostrarla a 10 personas; si 6+ dicen "yo pagaría por
   esto para mi evento", avanzamos.
 
+### Fase 1.5 — Personalización con IA (SPEC-003)
+- [ ] Paleta de colores desde imagen o prompt sobre la invitación demo
+- **Entregable:** la demo se re-pinta con los colores del cliente en segundos.
+
 ### Fase 2 — RSVP real (SPEC-002)
 - [ ] Confirmación de asistencia guardada en Supabase (nombre, pases, mensaje)
 - [ ] Panel simple del anfitrión: lista de confirmados, contador de pases
 - **Entregable:** invitación funcional de punta a punta para un evento real.
 
-### Fase 3 — Builder autoservicio (SPEC-003 a 005)
-- [ ] Registro/login de usuarios
-- [ ] Editor: elegir plantilla → personalizar textos, colores, fotos, fecha, mapa
-- [ ] Publicación con URL única (`tudominio.com/i/maria-xv`)
-- [ ] 3 plantillas iniciales: XV años, boda, baby shower
-- **Entregable:** cualquier persona crea su invitación sola, sin tocarte.
+### Fase 3 — Configurador conversacional con IA (SPEC-004 a 006)
+*El builder deja de ser un editor de formularios: crear la invitación es platicar con la IA.*
+- [ ] SPEC-004: Dashboard del cliente + chat IA que configura el evento (lugares, horarios, menú) con preview en vivo y publicación con URL única
+- [ ] SPEC-005: Dictado por voz en el configurador
+- [ ] SPEC-006: Ubicaciones inteligentes — el cliente menciona o pega un lugar y la IA lo resuelve con dirección, fotos de referencia y mapa
+- [ ] SPEC-003 se integra como paso de branding dentro del chat
+- **Entregable:** cualquier persona crea su invitación sola, conversando.
 
-### Fase 4 — Monetización (SPEC-006 a 007)
+### Fase 4 — Difusión y engagement (SPEC-007 a 009)
+- [ ] SPEC-007: Compartir por WhatsApp con preview rico (OG) + link permanente y dinámico
+- [ ] SPEC-008: Recordatorios automáticos a confirmados por email/WhatsApp (estilo webinar)
+- [ ] SPEC-009: Botón "Agendar" en Google/Apple Calendar (.ics)
+- **Entregable:** la invitación no se pierde en el chat y los invitados no olvidan el evento.
+
+### Fase 5 — Experiencia del evento en vivo (SPEC-010)
+- [ ] SPEC-010: Álbum colaborativo en tiempo real — invitados suben fotos vía QR, collage proyectable en vivo, descarga post-evento
+- **Entregable:** la invitación es parte de la fiesta, no solo el anuncio.
+
+### Fase 6 — Monetización (SPEC-011+)
 - [ ] Marca de agua en plan gratuito
 - [ ] Checkout con Mercado Pago / Stripe para desbloquear
-- [ ] Extras de pago: música, álbum QR, pases personalizados
+- [ ] Extras de pago: música, álbum QR, recordatorios WhatsApp, pases personalizados
 - **Entregable:** primera venta real. 🎉
 
-### Fase 5 — Crecimiento (SPEC-008+)
+### Fase 7 — Crecimiento
 - [ ] SEO: páginas por intención ("invitaciones digitales XV años", por país)
 - [ ] Footer viral en cada invitación: "Crea la tuya en..."
 - [ ] Analytics (visitas por invitación, conversión free→paid)
